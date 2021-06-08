@@ -1,8 +1,13 @@
 package com.magic.hotelreservation.services;
 
+import com.magic.hotelreservation.entity.Hotels;
+
+
 public interface IOperations {
 
-    public void addHotel(String name, Integer rate);
+    void addHotel(String name, Integer rate);
 
-    public int getSize();
+    <E> Hotels findCheapestHotel(E... dates);
+
+    int getSize();
 }

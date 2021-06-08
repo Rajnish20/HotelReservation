@@ -25,4 +25,12 @@ public class Hotels {
     public void setRate(Integer rate) {
         this.rate = rate;
     }
+
+    @Override
+    public String toString() {
+        return "Hotels{" +
+                "name='" + name + '\'' +
+                ", rate=" + rate +
+                '}';
+    }
 }
