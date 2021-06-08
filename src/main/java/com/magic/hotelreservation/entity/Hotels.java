@@ -3,34 +3,45 @@ package com.magic.hotelreservation.entity;
 public class Hotels {
 
     private String name;
-    private Integer rate;
+    private Integer weekendRate;
+    private Integer weekdaysRate;
 
-    public Hotels(String name, Integer rate) {
+    public Hotels(String name, Integer weekdaysRate, Integer weekendRate) {
         this.name = name;
-        this.rate = rate;
+        this.weekendRate = weekendRate;
+        this.weekdaysRate = weekdaysRate;
     }
 
     public String getName() {
         return name;
     }
 
+    public Integer getWeekendRate() {
+        return weekendRate;
+    }
+
+    public Integer getWeekdaysRate() {
+        return weekdaysRate;
+    }
+
     public void setName(String name) {
         this.name = name;
     }
 
-    public Integer getRate() {
-        return rate;
+    public void setWeekendRate(Integer weekendRate) {
+        this.weekendRate = weekendRate;
     }
 
-    public void setRate(Integer rate) {
-        this.rate = rate;
+    public void setWeekdaysRate(Integer weekdaysRate) {
+        this.weekdaysRate = weekdaysRate;
     }
 
     @Override
     public String toString() {
         return "Hotels{" +
                 "name='" + name + '\'' +
-                ", rate=" + rate +
+                ", weekendRate=" + weekendRate +
+                ", weekdaysRate=" + weekdaysRate +
                 '}';
     }
 }

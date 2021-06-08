@@ -7,9 +7,7 @@ import java.util.List;
 
 public interface IOperations {
 
-    void addHotel(String name, Integer rate);
-
-    Hotels findCheapestHotel(List<String> dates);
+    void addHotel(String name, Integer weekdaysRate,Integer weekendRate);
 
     int getSize();
 }

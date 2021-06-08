@@ -14,25 +14,15 @@ public class HotelReservationTest {
     @Test
     public void givenNameAndRate_AddedToList_ShouldReturnSizeThree() {
         IOperations operations = new Operations();
-        operations.addHotel("LakeWood", 110);
-        operations.addHotel("BridgeWood", 160);
-        operations.addHotel("RidgeWood", 220);
+        operations.addHotel("LakeWood", 110,90);
+        operations.addHotel("BridgeWood", 150,50);
+        operations.addHotel("RidgeWood", 220,150);
         int size = operations.getSize();
         Assertions.assertEquals(3, size);
+
     }
 
-    @Test
-    public void givenDates_ShouldReturnCheapestPrice() {
-        IOperations operations = new Operations();
-        operations.addHotel("LakeWood", 110);
-        operations.addHotel("BridgeWood", 160);
-        operations.addHotel("RidgeWood", 220);
-        List<String> dates = Arrays.asList("10/9/2020", "11/9/2020");
-        Hotels hotel = operations.findCheapestHotel(dates);
-        int price = hotel.getRate();
-        System.out.println(hotel.toString());
-        Assertions.assertEquals(220, price);
-    }
+
 
 
 }
