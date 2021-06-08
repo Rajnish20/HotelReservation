@@ -14,15 +14,14 @@ public class Operations implements IOperations {
         hotels.add(new Hotels(name, rate));
     }
 
-    @SafeVarargs
     @Override
-    public final <E> Hotels findCheapestHotel(E ... dates) {
+    public Hotels findCheapestHotel(List<String> dates) {
         Hotels hotel = hotels.get(0);
         for (int i = 1; i < hotels.size(); i++) {
             if (hotel.getRate() > hotels.get(i).getRate())
                 hotel = hotels.get(i);
         }
-        int price = dates.length * hotel.getRate();
+        int price = dates.size() * hotel.getRate();
         return new Hotels(hotel.getName(),price);
     }
 

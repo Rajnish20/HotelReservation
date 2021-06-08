@@ -6,6 +6,9 @@ import com.magic.hotelreservation.services.Operations;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class HotelReservationTest {
 
     @Test
@@ -24,7 +27,8 @@ public class HotelReservationTest {
         operations.addHotel("LakeWood", 110);
         operations.addHotel("BridgeWood", 160);
         operations.addHotel("RidgeWood", 220);
-        Hotels hotel = operations.findCheapestHotel("11Sep2020", "12Sep2020");
+        List<String> dates = Arrays.asList("10/9/2020", "11/9/2020");
+        Hotels hotel = operations.findCheapestHotel(dates);
         int price = hotel.getRate();
         System.out.println(hotel.toString());
         Assertions.assertEquals(220, price);
