@@ -1,0 +1,4 @@
+com/magic/hotelreservation/enity/Hotels.java
+ com.magic.hotelreservation.enity.Hotels
+com/magic/hotelreservation/controller/HotelReservation.java
+ com.magic.hotelreservation.controller.HotelReservation
