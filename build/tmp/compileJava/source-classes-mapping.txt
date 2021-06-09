@@ -1,8 +1,8 @@
-com/magic/hotelreservation/controller/HotelReservation.java
- com.magic.hotelreservation.controller.HotelReservation
-com/magic/hotelreservation/entity/Hotels.java
- com.magic.hotelreservation.entity.Hotels
-com/magic/hotelreservation/services/Operations.java
- com.magic.hotelreservation.services.Operations
-com/magic/hotelreservation/services/IOperations.java
- com.magic.hotelreservation.services.IOperations
+com/hotelreservation/Hotel.java
+ com.hotelreservation.Hotel
+com/hotelreservation/Main.java
+ com.hotelreservation.Main
+com/hotelreservation/IHotelReservation.java
+ com.hotelreservation.IHotelReservation
+com/hotelreservation/HotelReservation.java
+ com.hotelreservation.HotelReservation
